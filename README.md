@@ -9,7 +9,7 @@ echo ".cfg" >> .gitignore
 git clone --bare https://github.com/williammlu/dotfiles.git $HOME/.cfg
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 config checkout
-~/.
+sudo sh ~/.vim/mac_install.sh
 ```
 
 See more details about bare Git repos at https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
