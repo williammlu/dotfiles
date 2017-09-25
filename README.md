@@ -4,6 +4,7 @@ Personal dotfiles and more in bare git repository to be used on MacOS with Iterm
 ## Quickstart:
 
 ```
+cd ~
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 echo ".cfg" >> .gitignore
 git clone --bare https://github.com/williammlu/dotfiles.git $HOME/.cfg
