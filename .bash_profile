@@ -44,3 +44,6 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 # added by Anaconda3 4.2.0 installer
 export PATH="$PATH:~/anaconda/bin"
 
+
+# added by Anaconda3 5.0.1 installer
+export PATH="/Users/wml/anaconda3/bin:$PATH"
