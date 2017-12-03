@@ -4,7 +4,7 @@ set -o vi # edits in vi style if you press esc
 set -o ignoreeof
 
 bind Space:magic-space
-alias vim='mvim -v'
+# alias vim='mvim -v'
 
 alias ocf='ssh -2 -p 22 wml@tempest.ocf.io'
 alias speed='python ~/Desktop/Practice/speedtest-cli/speedtest_cli.py'
@@ -34,16 +34,17 @@ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 
 }
 
-
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK=~/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # added by Anaconda3 4.2.0 installer
 export PATH="$PATH:~/anaconda/bin"
 
-
 # added by Anaconda3 5.0.1 installer
-export PATH="/Users/wml/anaconda3/bin:$PATH"
+export PATH="$PATH:/Users/wml/anaconda3/bin"
+
+source ~/.profile
+export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/3.5/bin
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
