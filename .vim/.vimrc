@@ -1,4 +1,8 @@
-colorscheme badwolf
+set rtp+=~/.vim/bundle/awesome-vim-colorschemes
+
+"colorscheme badwolf
+colorscheme deus
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,6 +20,7 @@ endif
 imap jj <Esc> " Remaps jj to esc
 
 set hlsearch
+set incsearch
 hi Comment guifg=#32CD32
 hi Visual term=reverse cterm=reverse guibg=white
 highlight MatchParen ctermfg=blue ctermbg=208 "highlights matching parentheses in orange and makes text blue
@@ -45,7 +50,8 @@ set shiftwidth=4
 set smartcase
 set tabstop=4
 set title
-set undolevels=100
+set undolevels=1000
+set wildmenu
 syntax on
 
 

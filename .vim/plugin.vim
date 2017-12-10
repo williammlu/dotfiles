@@ -11,6 +11,8 @@ Plugin 'wincent/command-t'
 Plugin 'lervag/vimtex'
 Plugin 'itchyny/vim-cursorword'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'rafi/awesome-vim-colorschemes'
 
 call vundle#end()
 
