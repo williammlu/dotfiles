@@ -9,7 +9,6 @@ filetype off                  " required
 highlight Cursor guifg=orange guibg=white
 highlight iCursor guifg=white guibg=red
 
-
 if $TMUX == ''
     set clipboard+=unnamed
 endif
@@ -17,6 +16,7 @@ endif
 
 """ VISUALS AND BEHAVIOR
 
+source ~/.vim/custom/statusline.vim
 imap jj <Esc> " Remaps jj to esc
 
 set hlsearch
@@ -43,7 +43,7 @@ set history=1000
 set ignorecase
 set mouse=a
 set number
-set relativenumber
+"set relativenumber
 set scrolloff=7
 set shiftwidth=4
 set shiftwidth=4
