@@ -12,6 +12,7 @@ Plugin 'lervag/vimtex'
 Plugin 'itchyny/vim-cursorword'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'Raimondi/delimitMate'
 " Plugin 'rafi/awesome-vim-colorschemes'
 
 call vundle#end()
