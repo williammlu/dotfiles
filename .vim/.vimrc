@@ -18,6 +18,7 @@ endif
 
 source ~/.vim/custom/statusline.vim
 imap jj <Esc> " Remaps jj to esc
+map <F7> mzgg=G`z " press f7 to indent all code
 
 set hlsearch
 set incsearch
@@ -35,6 +36,7 @@ nnoremap <C-L> <C-W><C-L>
 set background=dark
 set backspace=indent,eol,start
 set copyindent
+set autoindent
 set cursorcolumn
 set cursorline
 set expandtab
