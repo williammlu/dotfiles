@@ -1,4 +1,3 @@
-export PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
 set -o vi # edits in vi style if you press esc 
 # set -o noclobber #no override with >, must use >> instead
 set -o ignoreeof
@@ -26,7 +25,8 @@ export CLICOLOR=1
 
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch) $"
+export PS1="[\t] \[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(parse_git_branch) $"
+#export PS1="\t @ \w >> \u >\[$(tput sgr0)\]"
 
 parse_git_branch() {
 
@@ -37,6 +37,7 @@ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 export ANDROID_HOME=~/Library/Android/sdk
 export ANDROID_SDK=~/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH="/Users/wml/anaconda2/bin:$PATH"
 
 # added by Anaconda3 4.2.0 installer
 export PATH="$PATH:~/anaconda/bin"
@@ -48,3 +49,5 @@ source ~/.profile
 export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/3.5/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# added by Anaconda2 5.0.1 installer
