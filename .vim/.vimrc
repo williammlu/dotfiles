@@ -1,7 +1,5 @@
 set rtp+=~/.vim/bundle/awesome-vim-colorschemes
 
-"colorscheme badwolf
-colorscheme deus
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -45,7 +43,7 @@ set history=1000
 set ignorecase
 set mouse=a
 set number
-"set relativenumber
+set relativenumber
 set scrolloff=7
 set shiftwidth=4
 set shiftwidth=4
@@ -54,7 +52,10 @@ set tabstop=4
 set title
 set undolevels=1000
 set wildmenu
+colorscheme badwolf
+"colorscheme deus
 syntax on
+
 
 
 let &t_SI .= "\<Esc>[?2004h"
