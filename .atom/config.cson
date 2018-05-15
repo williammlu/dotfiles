@@ -1,5 +1,59 @@
 "*":
   core:
+    automaticallyUpdate: false
+    closeDeletedFileTabs: true
+    closeEmptyWindows: false
+    customFileTypes:
+      "source.ini": [
+        ".hgrc"
+        ".buckconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        ".jfconfig"
+        ".watchmanconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUILD_DEFS"
+        "TARGETS"
+        "bzl"
+        "cconf"
+        "cinc"
+        "ctest"
+        "ctw"
+        "mcconf"
+        "tw"
+        "thrift-cvalidator"
+        "BUCK"
+      ]
+      "source.reason": [
+        ".re"
+      ]
+      "source.yaml": [
+        "yarn.lock"
+      ]
+    disabledPackages: [
+      "encoding-selector"
+      "line-ending-selector"
+      "fuzzy-finder"
+      "metrics"
+      "linter"
+      "github"
+      "MagicPython"
+      "tree-view"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "**/xplat/**/.*.metadata"
+    ]
+    telemetryConsent: "no"
     themes: [
       "one-light-ui"
       "solarized-light-syntax"
@@ -10,3 +64,64 @@
     zoomFontWhenCtrlScrolling: true
   "exception-reporting":
     userId: "21e39b91-85d4-4a48-8ecd-390cf50d0a2b"
+  "file-icons":
+    coloured: false
+  nuclide:
+    "atom-ide-console":
+      diffUrlPattern: "https://phabricator.intern.facebook.com/%s"
+      taskUrlPattern: "https://our.intern.facebook.com/intern/tasks?t=%s"
+    "fb-arc-lint":
+      blacklistedLinters: [
+        "FBHACK"
+        "FLAKE8"
+        "FLOW"
+        "HACK"
+        "HACKSYNTAX"
+        "PEP8"
+      ]
+    installRecommendedPackages: true
+    "nuclide-js-imports-client":
+      diagnosticsWhitelist: [
+        "/nuclide"
+        "/www"
+        "/instance-ide"
+        "/xplat/js"
+        "/oculus-skyline"
+        "/Software/Apps/skyline"
+      ]
+      requiresWhitelist: [
+        "/www"
+        "/instance-ide"
+        "/xplat/js"
+      ]
+    "nuclide-remote-projects":
+      connectionProfiles: [
+        {
+          deletable: true
+          displayTitle: "www"
+          params:
+            authMethod: "PRIVATE_KEY"
+            cwd: "/home/wml/www"
+            pathToPrivateKey: "/Users/wml/.ssh/fb_id_rsa"
+            remoteServerCommand: ""
+            server: "our.wml.sb.facebook.com"
+            sshPort: "22"
+            username: "wml"
+          saveable: true
+        }
+      ]
+    overriddenThirdPartySettings: [
+      "core.automaticallyUpdate"
+      "core.closeDeletedFileTabs"
+      "core.closeEmptyWindows"
+      "core.telemetryConsent"
+      "tool-bar.position"
+      "tool-bar.iconSize"
+      "nuclide.installRecommendedPackages"
+      "file-icons.coloured"
+      "nuclide.atom-ide-console.diffUrlPattern"
+      "nuclide.atom-ide-console.taskUrlPattern"
+    ]
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"

@@ -1,3 +1,4 @@
+export EDITOR=vim
 set -o vi # edits in vi style if you press esc 
 # set -o noclobber #no override with >, must use >> instead
 set -o ignoreeof
@@ -51,3 +52,9 @@ export PYTHONPATH=/Library/Frameworks/Python.framework/Versions/3.5/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # added by Anaconda2 5.0.1 installer
+
+# BEGIN: Block added by chef, to set environment strings
+# Please see https://fburl.com/AndroidProvisioning if you do not use bash
+# or if you would rather this bit of code 'live' somewhere else
+. ~/.fbchef/environment
+# END: Block added by chef
