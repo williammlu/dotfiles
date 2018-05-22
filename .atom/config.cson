@@ -42,6 +42,7 @@
       "github"
       "MagicPython"
       "tree-view"
+      "image-view"
     ]
     ignoredNames: [
       ".git"
@@ -55,8 +56,8 @@
     ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "solarized-light-syntax"
+      "one-dark-ui"
+      "solarized-dark-syntax"
     ]
   editor:
     scrollPastEnd: true
@@ -66,6 +67,8 @@
     userId: "21e39b91-85d4-4a48-8ecd-390cf50d0a2b"
   "file-icons":
     coloured: false
+  notifications:
+    showErrorsInDevMode: true
   nuclide:
     "atom-ide-console":
       diffUrlPattern: "https://phabricator.intern.facebook.com/%s"
