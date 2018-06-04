@@ -6,6 +6,7 @@ set -o ignoreeof
 bind Space:magic-space
 # alias vim='mvim -v'
 
+alias asc='adb shell screencap -p > screencap_`date '+%Y-%m-%d_%H-%M-%S'`.png && echo "Android screencap written."'
 alias ocf='ssh -2 -p 22 wml@tempest.ocf.io'
 alias speed='python ~/Desktop/Practice/speedtest-cli/speedtest_cli.py'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
